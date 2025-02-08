@@ -36,7 +36,7 @@ test.describe('Testes de autenticação', () => {
         });
 
         await test.step('Verifica exibição da mensagem de erro', async () => {
-            await expect(loginPage.getErrorMessage()).resolves.toContain('Warning: No match for E-Mail Address and/or Password.');
+            await expect(loginPage.getErrorMessage()).resolves.toContain(' Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.');
         });
     });
 
